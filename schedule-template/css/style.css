@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -23,9 +23,9 @@ a {
   text-decoration: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
 .cd-schedule {
@@ -41,8 +41,8 @@ Main Components
 
 @media only screen and (min-width: 800px) {
   .cd-schedule {
-    width: 90%;
-    max-width: 1400px;
+    width: 100%;
+    /* max-width: 1400px; */
     margin: 2em auto;
   }
   .cd-schedule::after {
@@ -71,7 +71,7 @@ Main Components
   }
   .cd-schedule .timeline li {
     position: relative;
-    height: 50px;
+    height: 100px;
   }
   .cd-schedule .timeline li::after {
     /* this is used to create the table horizontal lines */
@@ -185,7 +185,7 @@ Main Components
     width: 100%;
   }
   .cd-schedule .events .events-group {
-    width: 20%;
+    width: 12.5%;
     float: left;
     border: 1px solid #EAEAEA;
     /* reset style */
@@ -213,7 +213,7 @@ Main Components
     margin-bottom: 0;
   }
   .cd-schedule .events .events-group > ul {
-    height: 950px;
+    height: 2000px;
     /* reset style */
     display: block;
     overflow: visible;
@@ -272,19 +272,19 @@ Main Components
 .cd-schedule .event-name,
 .cd-schedule .event-date {
   display: block;
-  color: white;
+  color: black;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .cd-schedule .event-name {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
 }
 
 @media only screen and (min-width: 800px) {
   .cd-schedule .event-name {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -333,7 +333,48 @@ Main Components
   background: #f7bd7f;
 }
 
+/* david */
+.cd-schedule .single-event.event-1,
+.cd-schedule .event-1 .header-bg {
+  /* this is used to set a background color for the event and the modal window */
+  background: #577F92;
+}
+
+.cd-schedule .single-event.event-1:hover {
+  background: #618da1;
+}
+
+.cd-schedule .single-event.event-2,
+.cd-schedule .event-2 .header-bg {
+  background: #443453;
+}
+
+.cd-schedule .single-event.event-2:hover {
+  background: #513e63;
+}
+
+.cd-schedule .single-event.event-3,
+.cd-schedule .event-3 .header-bg {
+  background: #A2B9B2;
+}
+
+.cd-schedule .single-event.event-3:hover {
+  background: #b1c4be;
+}
+
+.cd-schedule .single-event.event-4,
+.cd-schedule .event-4 .header-bg {
+  background: #f6b067;
+}
+
+.cd-schedule .single-event.event-4:hover {
+  background: #f7bd7f;
+}
+
+/*david*/
+
 .cd-schedule .event-modal {
+  background: white;
   position: fixed;
   z-index: 3;
   top: 0;
@@ -603,4 +644,17 @@ Main Components
 .cd-schedule.modal-is-open .cover-layer {
   opacity: 1;
   visibility: visible;
+}
+
+.avatar {
+  width: 85px;
+  height: 85px;
+  max-width: 85px;
+  max-height: 85px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid #009a79;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover
 }
