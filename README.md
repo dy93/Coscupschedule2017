@@ -1,7 +1,7 @@
-Schedule Template
+Coscup 2017 schedule
 =========
 
-A simple template that let you display events on a timeline, as well as organize them in groups (week days, conference rooms etc…)
+Modify from
 
 [Article on CodyHouse](https://codyhouse.co/gem/schedule-template/)
 
